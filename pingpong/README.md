@@ -1,4 +1,4 @@
-#PingPong Test
+# PingPong Test
 
 Spec1
 Take input number from the user
