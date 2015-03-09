@@ -1,4 +1,4 @@
-{ "require" : { 
-"phpunit"/"phpunit" : "4.5.*"
+{ "require" : {
+"phpunit/phpunit" : "4.5.*"
 }
 }
