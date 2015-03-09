@@ -53,8 +53,35 @@
         //check all words in array
         //make sure the first word is always capitalized, regardless of exclusions
 
+        function test_makeTitleCase_firstWord()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "the jungle book";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("The Jungle Book", $result);
+        }
+
         //check all words in array
         //make sure the last word is always capitalized, regardless of exclusions
+
+        function test_makeTitleCase_lastWord()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "hop on pop on";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("Hop on Pop On", $result);
+        }
+
 
     }
 ?>
