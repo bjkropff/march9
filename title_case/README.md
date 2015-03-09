@@ -1,2 +1,2 @@
 # Simple title case generator
-# Tanner Heffner & Brian Kropff
+Tanner Heffner & Brian Kropff
