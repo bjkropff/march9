@@ -82,6 +82,22 @@
             $this->assertEquals("Hop on Pop On", $result);
         }
 
+        //check all words in array
+        //make sure all words follow standard title case rules (no random letters capitalized in the middle of words)
+
+        function test_makeTitleCase_standardCaps()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "tAnK gIrL";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("Tank Girl", $result);
+        }
+
 
     }
 ?>
